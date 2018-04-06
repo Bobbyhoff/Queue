@@ -6,4 +6,4 @@ grails war
 ```bash
 grails run-app 
 ```
-![alt text](https://raw.githubusercontent.com/Bobbyhoff/Queue/mastegitr/signup.png)
+![alt text](https://raw.githubusercontent.com/Bobbyhoff/Queue/master/signup.png)
