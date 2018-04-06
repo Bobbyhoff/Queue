@@ -1,8 +1,8 @@
-#Build Instructions
+# Build Instructions
 ```bash
 grails war 
 ```
-#Run Instructions
+# Run Instructions
 ```bash
 grails run-app 
 ```
