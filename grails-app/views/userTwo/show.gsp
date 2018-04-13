@@ -20,9 +20,9 @@
             <div class="message" role="status">${flash.message}</div>
             </g:if>
             <f:display bean="user" />
-            <g:form resource="${this.user}" method="DELETE">
+            <g:form action="delete" id="${this.user.id}" method="DELETE">
                 <fieldset class="buttons">
-                    <g:link class="edit" action="edit" resource="${this.user}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                    <g:link class="edit" action="edit" id="${this.user.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
                     <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                 </fieldset>
             </g:form>

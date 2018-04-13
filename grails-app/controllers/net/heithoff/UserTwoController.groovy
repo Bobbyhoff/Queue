@@ -70,7 +70,7 @@ class UserTwoController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), user.id])
-                redirect user
+                redirect action: "show", id: user.id
             }
             '*'{ respond user, [status: OK] }
         }
